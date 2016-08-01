@@ -1326,8 +1326,7 @@
 			}
 
 		.image.featured {
-			display: block;
-			width: 100%;
+			width: 65%;
 			margin: 0 0 2em 0;
 		}
 
@@ -1715,6 +1714,10 @@
 		text-transform: uppercase;
 	}
 
+	#logo #logo_img {
+		width: 50%;
+	}
+
 /* Intro */
 
 	#intro > .style2 {
@@ -1973,8 +1976,8 @@
 			}
 
 			.homepage #header {
-				padding-top: 10em;
-				padding-bottom: 20em;
+				padding-top: 5em;
+				padding-bottom: 25em;
 			}
 
 		/* Logo */
