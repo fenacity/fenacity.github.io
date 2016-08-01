@@ -1979,5 +1979,23 @@ ol.default {
         margin: 0.5em 0 0 0; }
         #copyright ul li:first-child {
           margin-top: 0; } }
+.alert {
+  margin: 2em 0em; }
+  .alert .alert-div {
+    padding: 1em;
+    border: 1px solid transparent;
+    border-radius: 4px; }
+  .alert .alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6; }
+  .alert .alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1; }
+  .alert .alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1; }
 
 /*# sourceMappingURL=main.css.map */

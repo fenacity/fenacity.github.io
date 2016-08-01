@@ -93,3 +93,26 @@ $('a[href*=#]').on('click', function(event){
    event.preventDefault();
    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
 });
+
+var contactForm = $('#contact-form');
+contactForm.on('reset', function(e){contactForm.find('.loading').hide(); });
+
+var alert = $('.alert');
+contactForm.submit(function(e) {
+	e.preventDefault();
+	$.ajax({
+		url: '//formspree.io/nvenky@gmail.com',
+		method: 'POST',
+		data: $(this).serialize(),
+		dataType: 'json',
+		beforeSend: function() {
+			alert.html('<div class="alert-div alert-info">Sending message…</div>');
+		},
+		success: function(data) {
+			alert.html('<div class="alert-div alert-success">Message sent!</div>');
+		},
+		error: function(err) {
+			alert.html('<div class="alert-div alert-danger">Oops, there was an error sending mail.</div>');
+		}
+	});
+});
