@@ -292,8 +292,7 @@
 		}
 
 		&.featured {
-			display: block;
-			width: 100%;
+			width: 65%;
 			margin: 0 0 2em 0;
 		}
 	}
@@ -642,6 +641,10 @@
 			color: rgba(255, 255, 255, 0.5);
 			text-transform: uppercase;
 		}
+
+		#logo_img {
+            width: 50%;
+        }
 	}
 
 /* Intro */
@@ -890,7 +893,7 @@
 		/* Wrappers */
 
 			.wrapper {
-				padding: 6em 0 9em 0;
+				/* padding: 6em 0 9em 0; */
 
 				.title {
 					font-size: 0.9em;
@@ -920,7 +923,8 @@
 			}
 
 			.homepage #header {
-				padding: 18em 0;
+				padding-top: 5em;
+				padding-bottom: 20em;
 			}
 
 		/* Logo */
